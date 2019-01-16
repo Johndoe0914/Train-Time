@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Train Time</title>
+    <link rel="stylesheet" type="text/css" href="..//Train-Time/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    
+    
+   
+    
+</head>
+<body>
+        <div class="container"> 
+          <div class="line">
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+         
+              
+              <table class="table table-bordered, .table-sm " style="margin: auto; width: 900px; height: auto; background-color: white">
+                <thead>
+                  <tr>
+                    <th scope="col-2" id="name-header">Train Name</th>
+                    <th scope="col-2" id="destination-header">Destination</th>
+                    <th scope="col-2" id="frequency-header">Frequency</th>
+                    <th scope="col-2" id="arrival-header">Arrival</th>
+                    <th scope="col-2" id="minutes-header">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amtrak</td>
+                    <td>miami</td>
+                    <td>500</td>
+                    <td>12:30am</td>
+                    <td>50</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+             
+                  
+                  <div class="card" style=" height: 500px;width: 85%; margin: auto; border-color: black">
+                        <div  style="background-color: blue; color: white"class="card-header">
+                          Add a Train     
+                        </div>
+                        <form style="margin-right:50px;margin-left:50px; margin-top: 25px; margin-bottom: 25px;">
+                                <div class="form-group">
+                                  <label ><strong>Train name</strong></label>
+                                  <input type="text" class="form-control" id="Train-name-input"  placeholder="Enter Train">
+                                </div>
+                                <div class="form-group">
+                                  <label ><strong>Destination</strong></label>
+                                  <input type="text" class="form-control" id="Train-destination-input" placeholder="Enter Destination">
+                                </div>
+                                <div class="form-group">
+                                        <label ><strong>First Train Time (HH:mm - Military Time</strong></label>
+                                        <input type="text" class="form-control" id="Train-time-input"  placeholder="Enter Time">
+                                      </div>
+                                      <div class="form-group">
+                                            <label ><strong>Frequency (min)</strong></label>
+                                            <input type="text" class="form-control" id="Train-frequency-input"  placeholder="Enter frequency">
+                                          </div>
+                                <button type="submit" id="Add-train"class="btn btn-primary">Submit</button>
+                              </form>
+                              
+                        </div>
+                      </div>
+                        
+
+                            
+                        <script src="..//Train-Time/train.js"></script> 
+                        <script src="..//Train-Time/assets/moment.js"></script>
+                        
+                      
+                         
+                       
+
+                        
+</body>
+</html>
