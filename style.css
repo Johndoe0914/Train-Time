@@ -2,5 +2,29 @@
   background-image: url()
 }
 body{
-background-image: url(..//Train-Time/assets/images/Thunderstorm\ on\ Sunset\ Sky.jpg);
+background-image: url(https://cdn.magdeleine.co/wp-content/uploads/2014/12/mistyforest.jpg);
+}
+.container {
+  margin-bottom: 50px;
+  
+}
+#trainTable {
+  box-shadow: 0 0 7px #222;
+}
+.card {
+  box-shadow: 0 0 7px #222;
+}
+#clock {
+  height: 100px;
+  font-size: 40px;
+  width: 70%;
+  line-height: 100px;  
+  margin: 50px auto 50px;
+  padding: 0 50px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #222;
+  text-shadow: 0 0 3px #fff;
 }

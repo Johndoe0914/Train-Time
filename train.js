@@ -15,6 +15,16 @@ var config = {
 
   var database = firebase.database();
 
+ 
+
+  var update = function() {
+    document.getElementById("clock")
+    .innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+}
+setInterval(update, 1000);
+
+
+
   
   $("#Add-train").on("click",function(event){
       
